@@ -1,0 +1,20 @@
+{
+  "name": "node-mysql",
+  "version": "1.0.0",
+  "description": "boilerplate",
+  "main": "index.js",
+  "author": "Panupong ",
+  "license": "MIT",
+  "scripts": {
+    "write-js": "webpack --mode production"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
