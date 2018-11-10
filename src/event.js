@@ -1,8 +1,8 @@
 
 export class JqueryEvent {
     constructor() {
-        this.click = $('#m1');
-        this.doubleClick = $('#m2');
+        this.mouseClick = $('#m1');
+        this.mouseDoubleClick = $('#m2');
         this.mouseEnter = $('#m3');
         this.mouseLeave = $('#m4');
         this.countNumber = $('#count');
@@ -15,5 +15,16 @@ export class JqueryEvent {
 
     mouseEventStart() {
         this.countNumber.text(this.count);
+        this.eventClick();
+    }
+
+    eventClick() {
+        this.mouseClick.click(() => {
+            this.count++;
+            if(this.count === 10) {
+                this.count = 0;
+            }
+            this.countNumber.text(this.count);
+        });
     }
 }
