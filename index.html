@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        </style>
 </head>
 <body>
     
@@ -19,6 +37,43 @@
     <p id="m2">Double Click</p>
     <p id="m3">Mouse Enter</p>
     <p id="m4">Mouse Leave</p>
+
+
+    <h1>Search Table (Filter)</h1>
+    <input id="myInput" type="text" placeholder="Search..">
+<br><br>
+
+<table>
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody id="myTable">
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>john@example.com</td>
+    </tr>
+    <tr>
+      <td>Mary</td>
+      <td>Moe</td>
+      <td>mary@mail.com</td>
+    </tr>
+    <tr>
+      <td>July</td>
+      <td>Dooley</td>
+      <td>july@greatstuff.com</td>
+    </tr>
+    <tr>
+      <td>Anja</td>
+      <td>Ravendale</td>
+      <td>a_r@test.com</td>
+    </tr>
+  </tbody>
+</table>
 
     <script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
