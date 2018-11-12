@@ -1,7 +1,7 @@
 
 export class Hello {
     alertHello() {
-        alert('Hello World');
+        console.log('start App');
     }
 
     start() {
